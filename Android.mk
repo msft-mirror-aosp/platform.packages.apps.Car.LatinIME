@@ -26,7 +26,10 @@ LOCAL_RESOURCE_DIR :=  $(LOCAL_PATH)/res
 LOCAL_CERTIFICATE := shared
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-        android-common android-support-v4 jsr305
+        android-common jsr305
+LOCAL_STATIC_ANDROID_LIBRARIES := android-support-v4
+
+LOCAL_USE_AAPT2 := true
 
 # Include all the resources regardless of system supported locales
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
