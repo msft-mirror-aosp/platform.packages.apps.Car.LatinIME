@@ -671,8 +671,6 @@ public class KeyboardView extends View implements View.OnClickListener {
                 width = MeasureSpec.getSize(widthMeasureSpec);
             }
             setMeasuredDimension(width, mKeyboard.getHeight() + getPaddingTop() + getPaddingBottom());
-
-            Log.d("Yao", "Keyboard height " + mKeyboard.getHeight() + " " + getPaddingTop() + " " + getPaddingBottom());
         }
     }
 
