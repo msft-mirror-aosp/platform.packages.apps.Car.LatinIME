@@ -29,6 +29,8 @@ LOCAL_CERTIFICATE := shared
 
 LOCAL_USE_AAPT2 := true
 
+LOCAL_OVERRIDES_PACKAGES := LatinIME
+
 LOCAL_STATIC_JAVA_LIBRARIES := \
         android-common jsr305
 LOCAL_STATIC_ANDROID_LIBRARIES := android-support-v4
