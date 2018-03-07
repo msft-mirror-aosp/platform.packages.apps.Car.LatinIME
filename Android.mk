@@ -38,7 +38,9 @@ LOCAL_STATIC_ANDROID_LIBRARIES := android-support-v4
 # Include all the resources regardless of system supported locales
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
 
-LOCAL_SDK_VERSION := current
+#TODO(b/72620511) Apps should not use platform APIs directly
+#LOCAL_SDK_VERSION := current
+LOCAL_PRIVATE_PLATFORM_APIS := true
 
 # LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 LOCAL_PROGUARD_ENABLED := disabled
