@@ -33,7 +33,7 @@ LOCAL_OVERRIDES_PACKAGES := LatinIME
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
         android-common jsr305
-LOCAL_STATIC_ANDROID_LIBRARIES := android-support-v4
+LOCAL_STATIC_ANDROID_LIBRARIES += android-support-car
 
 # Include all the resources regardless of system supported locales
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
@@ -47,7 +47,6 @@ LOCAL_PROGUARD_ENABLED := disabled
 
 LOCAL_DEX_PREOPT := false
 
-include packages/apps/Car/libs/car-stream-ui-lib/car-stream-ui-lib.mk
 include packages/services/Car/car-support-lib/car-support.mk
 
 include $(BUILD_PACKAGE)
