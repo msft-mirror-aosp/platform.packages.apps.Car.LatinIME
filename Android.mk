@@ -31,9 +31,12 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_OVERRIDES_PACKAGES := LatinIME
 
+LOCAL_JAVA_LIBRARIES += android.car
+
 LOCAL_STATIC_JAVA_LIBRARIES := \
         android-common jsr305
-LOCAL_STATIC_ANDROID_LIBRARIES += android-support-car
+
+LOCAL_STATIC_ANDROID_LIBRARIES += androidx.car_car
 
 # Include all the resources regardless of system supported locales
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
@@ -46,8 +49,6 @@ LOCAL_PRIVATE_PLATFORM_APIS := true
 LOCAL_PROGUARD_ENABLED := disabled
 
 LOCAL_DEX_PREOPT := false
-
-include packages/services/Car/car-support-lib/car-support.mk
 
 include $(BUILD_PACKAGE)
 
