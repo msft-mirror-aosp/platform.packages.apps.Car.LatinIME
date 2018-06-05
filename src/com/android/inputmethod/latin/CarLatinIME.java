@@ -126,8 +126,8 @@ public class CarLatinIME extends InputMethodService {
                 }
             };
 
-    private final CarUxRestrictionsManager.onUxRestrictionsChangedListener mCarUxRListener =
-            new CarUxRestrictionsManager.onUxRestrictionsChangedListener() {
+    private final CarUxRestrictionsManager.OnUxRestrictionsChangedListener mCarUxRListener =
+            new CarUxRestrictionsManager.OnUxRestrictionsChangedListener() {
                 @Override
                 public void onUxRestrictionsChanged(CarUxRestrictions restrictions) {
                     if (restrictions == null) {
