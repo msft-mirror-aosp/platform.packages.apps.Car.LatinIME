@@ -196,8 +196,7 @@ public class CarLatinIME extends InputMethodService {
                 getResources().getDimensionPixelSize(R.dimen.keyboard_padding_vertical), 0, 0);
         mKeyboardView.setOnKeyboardActionListener(mKeyboardActionListener);
         mPopupKeyboardView.setOnKeyboardActionListener(mPopupKeyboardActionListener);
-        mKeyboardView.setShifted(mKeyboardView.isShifted());
-        updateCapitalization();
+        mKeyboardView.setShifted(mEditorInfo.initialCapsMode != 0);
     }
 
     public Locale getLocale() {
@@ -244,8 +243,11 @@ public class CarLatinIME extends InputMethodService {
     }
 
     private void updateCapitalization() {
-        boolean shouldCapitalize =
+        boolean shouldCapitalize = false;
+        if (getCurrentInputConnection() != null) {
+            shouldCapitalize =
                 getCurrentInputConnection().getCursorCapsMode(mEditorInfo.inputType) != 0;
+        }
         mKeyboardView.setShifted(shouldCapitalize);
     }
 
