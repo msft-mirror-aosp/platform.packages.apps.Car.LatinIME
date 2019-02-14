@@ -11,4 +11,6 @@
     <color name="transparent_black">#00000000</color>
     <color name="ime_hwr_background">#e6172026</color>
     <color name="ime_hwr_stroke">#ff1de9b6</color>
+    <color name="car_teal_200">#ff80cbc4</color>
+    <color name="car_teal_700">#ff00796b</color>
 </resources>
