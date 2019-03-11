@@ -11,4 +11,5 @@
     <color name="transparent_black">#00000000</color>
     <color name="ime_hwr_background">#e6172026</color>
     <color name="ime_hwr_stroke">#ff1de9b6</color>
+    <color name="popup_background">@*android:color/car_teal_700</color>
 </resources>
