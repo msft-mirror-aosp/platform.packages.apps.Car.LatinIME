@@ -22,7 +22,6 @@ android_app {
     static_libs: [
         "android-common",
         "jsr305",
-        "androidx.car_car",
     ],
     // Include all the resources regardless of system supported locales
     aapt_include_all_resources: true,
