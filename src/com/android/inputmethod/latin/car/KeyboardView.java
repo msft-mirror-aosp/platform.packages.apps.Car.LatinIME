@@ -385,7 +385,7 @@ public class KeyboardView extends View implements View.OnClickListener {
         mAccessibilityManager =
             (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
 
-        int color = getResources().getColor(R.color.car_dark_blue_grey_700);
+        int color = getResources().getColor(R.color.ime_background_letters);
         mPopupScrimColor = Color.argb(
                 SCRIM_ALPHA, Color.red(color), Color.green(color), Color.blue(color));
         mBackgroundColor = Color.TRANSPARENT;
